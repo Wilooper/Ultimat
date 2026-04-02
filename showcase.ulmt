@@ -1,0 +1,17 @@
+print "=== ULMT v0.3.0 Showcase ==="
+print ""
+print "String concatenation:"
+print "Hello" + " " + "ULMT"
+print ""
+print "Arithmetic with precedence:"
+print 2 + 3 * 4
+print (2 + 3) * 4
+print 100 - 50 / 2
+print ""
+print "Complex expressions:"
+print (10 + 5) * (3 + 2)
+print ""
+print "Integer output:"
+print 1337
+print 42
+print 999

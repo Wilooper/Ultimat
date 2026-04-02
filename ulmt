@@ -1,0 +1,11 @@
+#!/bin/bash
+# ULMT Wrapper - Run ULMT programs like Python
+# Usage: ulmt app.ulmt [options]
+
+if [ $# -lt 1 ]; then
+    echo "Usage: ulmt <file.ulmt> [--emit-asm] [--no-run]"
+    exit 1
+fi
+
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+python3 "$SCRIPT_DIR/ulmt.py" "$@"
